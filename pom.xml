@@ -164,9 +164,16 @@
   </build>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/depgraph-view-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/depgraph-view-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/depgraph-view-plugin</url>
+    <connection>
+      scm:git:ssh://git@gilligan.pearsondev.com:aidevops/depgraph-view-plugin.git
+    </connection>
+    <developerConnection>
+      scm:git:ssh://git@gilligan.pearsondev.com:aidevops/depgraph-view-plugin.git
+    </developerConnection>
+    <url>
+      http://gilligan.pearsondev.com/aidevops/depgraph-view-plugin
+    </url>
+    <tag>HEAD</tag>
   </scm>
 
     <repositories>
