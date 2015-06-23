@@ -165,10 +165,10 @@
 
   <scm>
     <connection>
-      scm:git:ssh://git@gilligan.pearsondev.com:aidevops/depgraph-view-plugin.git
+      scm:git:ssh://git@gilligan.pearsondev.com/aidevops/depgraph-view-plugin.git
     </connection>
     <developerConnection>
-      scm:git:ssh://git@gilligan.pearsondev.com:aidevops/depgraph-view-plugin.git
+      scm:git:ssh://git@gilligan.pearsondev.com/aidevops/depgraph-view-plugin.git
     </developerConnection>
     <url>
       http://gilligan.pearsondev.com/aidevops/depgraph-view-plugin
