@@ -1,38 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (c) 2010 Stefan Wolf
-  ~
-  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
-  ~ of this software and associated documentation files (the "Software"), to deal
-  ~ in the Software without restriction, including without limitation the rights
-  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  ~ copies of the Software, and to permit persons to whom the Software is
-  ~ furnished to do so, subject to the following conditions:
-  ~
-  ~ The above copyright notice and this permission notice shall be included in
-  ~ all copies or substantial portions of the Software.
-  ~
-  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  ~ THE SOFTWARE.
-  -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.501</version>
+    <version>1.567</version>
   </parent>
-  <properties>
+<!--   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
-  <groupId>org.jenkins-ci.plugins</groupId>
+  </properties> -->
+  <groupId>com.pearson.aidevops.jenkins-ci.plugins</groupId>
   <artifactId>depgraph-view</artifactId>
   <packaging>hpi</packaging>
 
@@ -176,10 +154,27 @@
     <tag>HEAD</tag>
   </scm>
 
+  <distributionManagement>
+      <repository>
+        <id>repo1.ic.ncs.com</id>
+        <name>Pearson Repository</name>
+        <url>
+        http://repo1.ic.ncs.com/nexus/content/repositories/pearson-repo
+        </url>
+        </repository>
+      <snapshotRepository>
+        <id>PearsonSnapshot</id>
+        <name>PearsonSnapshot</name>
+        <url>
+        http://repo1.ic.ncs.com/nexus/content/repositories/PearsonSnapshot
+        </url>
+      </snapshotRepository>    
+  </distributionManagement>
+
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
+            <url>http://repo1.ic.ncs.com/nexus/content/groups/public-snapshots</url>
         </repository>
     </repositories>
 
