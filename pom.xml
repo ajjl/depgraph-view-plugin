@@ -15,7 +15,7 @@
   <packaging>hpi</packaging>
 
   <name>Dependency Graph Viewer Plugin</name>
-  <version>0.11.4-pearson-SNAPSHOT</version>
+  <version>0.11.4-pearson</version>
   <licenses>
     <license>
       <name>The MIT license</name>
